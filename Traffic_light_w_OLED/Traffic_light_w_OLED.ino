@@ -56,13 +56,13 @@ void nextColor() {
   digitalWrite(currentColor, LOW);
   if (currentColor == RED) {
     currentColor = GREEN;
-    setText("Go Go\nHeidi");
+    setText("Go");
   } else if (currentColor == GREEN) {
     currentColor = YELLOW;
-    setText("Warning\nHeidi");
+    setText("Warning");
   } else {
     currentColor = RED;
-    setText("Stop\nHeidi");
+    setText("Stop");
   }
   digitalWrite(currentColor, HIGH);
   Serial.println(currentColor);
